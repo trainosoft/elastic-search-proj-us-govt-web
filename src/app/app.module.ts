@@ -15,6 +15,7 @@ import { environment } from 'src/environments/environment';
 import { FakeAPIService } from './_fake/fake-api.service';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxUiLoaderConfig, NgxUiLoaderModule, PB_DIRECTION, POSITION, SPINNER } from 'ngx-ui-loader';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 // #fake-end#
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
@@ -56,6 +57,7 @@ function appInitializer(authService: AuthService) {
     NgbModule,
   ],
   providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
     {
       provide: APP_INITIALIZER,
       useFactory: appInitializer,
