@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-tomcat": "ng build --deploy-url=/npi-web/ --base-href=/npi-web/",
+    "build-tomcat": "./node_modules/@angular/cli/bin/ng build --deploy-url=/npi-web/ --base-href=/npi-web/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
