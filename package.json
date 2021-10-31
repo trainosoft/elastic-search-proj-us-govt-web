@@ -1,11 +1,11 @@
 {
-  "name": "demo1",
+  "name": "npi-web",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-tomcat": "ng build --deploy-url=/npi/ --base-href=/npi/",
+    "build-tomcat": "ng build --deploy-url=/npi-web/ --base-href=/npi-web/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

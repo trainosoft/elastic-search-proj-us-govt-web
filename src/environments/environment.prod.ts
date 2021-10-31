@@ -7,7 +7,8 @@ export const environment = {
   appVersion: 'v8.0.27',
   USERDATA_KEY: 'authf649fc9a5f55',
   isMockEnabled: true,
-  apiUrl: 'http://143.198.12.169:8080'
+  apiUrl: 'http://143.198.12.169:8080/npi',
+  //apiUrl: 'http://localhost:8081/npi'
 };
 
 /*
