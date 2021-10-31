@@ -1,0 +1,96 @@
+//
+// Theme style
+//
+
+// Mode
+$mode: default;
+
+// Initialize
+@import "init";
+
+// Components
+@import "./core/components/components";
+@import "components/components";
+
+// Layout
+@import "layout/layout";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+// Angular vendors
+@import "~socicon/css/socicon.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~line-awesome/dist/line-awesome/css/line-awesome.css";
+@import "~prism-themes/themes/prism-shades-of-purple.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~animate.css/animate.css";
+@import "./core/vendors/plugins/prismjs";
+@import "./core/vendors/plugins/formvalidation";
+.dataTables_empty {
+    display: none !important;
+}
+
+.table.dataTable.no-footer {
+ border: none !important;   
+}
+.dataTables_info {
+    color: #5E6278 !important;
+    font-weight: 500;
+    font-size: 13px;
+}
+.paginate_button {
+    border-radius: 0.475rem !important;
+}
+.paginate_button:hover {
+    color: #5E6278 !important;
+    border: none !important;
+    background-color: #FFFFFF !important;
+    background: unset !important;   
+    border: unset !important;
+}
+
+app-header {
+    border-bottom: 2px solid #E4E6EF;
+}
+.ng-select .ng-select-container {
+    color: inherit !important; 
+     background-color: transparent !important; 
+     border-radius: unset !important; 
+     border: unset !important; 
+     min-height: 36px; 
+     align-items: center !important;
+}
+.ng-select .ng-select-container:hover {
+    box-shadow: unset !important;
+}
+ng-select {
+    padding: 6px !important;
+}
+.form-select {
+    background-image: unset !important;
+}
+
+.form-select.ng-select-disabled {
+    background-color: #f5f8fa52 !important;
+    color: #86868a47 !important;
+    border: unset !important;
+}
+
+
+.ng-select.ng-select-disabled .ng-select-container .ng-value-container .ng-placeholder {
+    color: #5e627838 !important;
+}
+
+.form-control.city-field:disabled, .form-control.city-field[readonly]
+{
+    background-color: #f5f8fa52 !important;
+    border: unset !important;
+}
+
+ 
+.form-control.city-field:disabled::-webkit-input-placeholder, 
+.form-control.city-field[readonly]::-webkit-input-placeholder,
+.form-control.city-field:disabled::-moz-placeholder, 
+.form-control.city-field[readonly]::-moz-placeholder,
+.form-control.city-field:disabled::-ms-input-placeholder, 
+.form-control.city-field[readonly]::-ms-input-placeholder {
+    color: #86868a47 !important;
+}
