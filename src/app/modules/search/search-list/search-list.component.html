@@ -164,7 +164,7 @@
                                     {{countriesListMap[row[fieldKeys.COUNTRY]] || '-'}} 
                                  </td>
                                  <td>
-                                    {{ statesListMap[row[fieldKeys.STATE]] || '-'}} 
+                                    {{ getStateName(row[fieldKeys.COUNTRY],row[fieldKeys.STATE]) || '-'}} 
                                  </td>
                                  <td>
                                     {{row[fieldKeys.CITY] || '-'}} 

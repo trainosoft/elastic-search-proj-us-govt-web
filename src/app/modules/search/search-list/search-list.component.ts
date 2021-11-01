@@ -67,7 +67,10 @@ export class SearchListComponent implements OnInit {
     this.searchService.getStateList(null, true).subscribe((data: any) => {
       this.stateListAll = data.data;
       this.stateListAll.forEach(e => {
-        this.statesListMap[e.state_code]=e.name;
+        if (!this.statesListMap[e['country_code']]) {
+          this.statesListMap[e['country_code']]={};
+        }
+        this.statesListMap[e['country_code']][e['state_code']]=e.name;
       })
       this.cd.detectChanges();
     })
@@ -106,5 +109,11 @@ export class SearchListComponent implements OnInit {
   }
   onStateChange() {
     this.filter.city = null;
+  }
+  getStateName(country: any, state: any) {
+    if (this.statesListMap[country] && this.statesListMap[country][state]) {
+      return this.statesListMap[country][state];
+    }
+    return "";
   }
 }
